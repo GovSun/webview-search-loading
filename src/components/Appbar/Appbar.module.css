@@ -1,0 +1,41 @@
+.appbar {
+  padding-top: var(--safe-top);
+  background-color: var(--components-appbar-bg-default);
+}
+
+/*
+ * Figma: Left 60 (8 + 40 + 12), search/filter 236 with its pill inset 8 px from the left,
+ * Right 60 (12 + 40 + 8) and 4 px left over at the edge. At 360 px that puts the pill at
+ * 68–296 and the right icon at 308–348, as in the design; on wider screens the pill grows.
+ */
+.nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-right: 4px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 52px;
+}
+
+.left {
+  gap: var(--spacing-sm);
+  padding: 0 12px 0 8px;
+}
+
+.right {
+  justify-content: flex-end;
+  padding: 0 8px 0 12px;
+}
+
+.center {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  padding-left: 8px;
+}

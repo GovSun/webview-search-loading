@@ -1,0 +1,100 @@
+/*
+ * Positions are the Figma insets of «Иллюминатор» resolved to px (box 109.856 × 148):
+ *   Стекло  17.01% 18.1% 21.12% 18.1%            → 19.884, 25.175, 70.086 × 91.571
+ *   Ободок  11.42% 11.97% 13.36% 11.97%, img −0.26% −0.34% → 12.866, 16.613
+ *   Рама     3.92%  5.11%  5.12%  5.11%, img −3.12% −5.03% −4.25% → 0.653, 1.602
+ */
+.window {
+  position: relative;
+  flex-shrink: 0;
+  width: 109.856px;
+  height: 148px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.glass {
+  position: absolute;
+  left: 19.884px;
+  top: 25.175px;
+  width: 70.0864px;
+  height: 91.5712px;
+  overflow: hidden;
+  -webkit-mask-image: url('../../assets/window/glass-mask.svg');
+  mask-image: url('../../assets/window/glass-mask.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  /* Same stops as SKY_STOPS in cloudSky.ts: shows before the first frame and without canvas. */
+  background: linear-gradient(
+    to bottom,
+    #4596f0 0%,
+    #4c9df6 7%,
+    #62aef8 45%,
+    #86c1fa 66%,
+    #b9dbfc 78%,
+    #dcedfd 88%,
+    #edf5fe 100%
+  );
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvas[data-ready='true'] {
+  opacity: 1;
+}
+
+/*
+ * The wing flexes a little in flight: it pivots on the root, which is off the glass on the
+ * right, so only the tip moves (about half a pixel). Constant motion, so ease-in-out both ways.
+ */
+.wing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform-origin: 105% 70%;
+  animation: wing-flex 4.8s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+}
+
+@keyframes wing-flex {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-0.45deg) translateY(-0.15px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wing {
+    animation: none;
+  }
+}
+
+.rim {
+  position: absolute;
+  left: 12.866px;
+  top: 16.613px;
+  width: 84.1197px;
+  height: 111.908px;
+  max-width: none;
+}
+
+.frame {
+  position: absolute;
+  left: 0.653px;
+  top: 1.602px;
+  width: 108.547px;
+  height: 144.529px;
+  max-width: none;
+}

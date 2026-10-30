@@ -1,0 +1,55 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 8px 12px;
+  border-radius: var(--radius-lg);
+  background-color: var(--components-control-bg-default);
+  transition:
+    transform var(--dur-release) var(--ease-out),
+    background-color var(--dur-release) var(--ease-out);
+}
+
+.text {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 1px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* IM-13 S */
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+/* IM-11 R */
+.subtitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--components-control-text-secondary-default);
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.tab:active {
+  transform: scale(0.98);
+  background-color: var(--components-control-bg-pressed);
+  transition-duration: var(--dur-press);
+}

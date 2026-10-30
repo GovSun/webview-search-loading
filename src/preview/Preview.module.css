@@ -1,0 +1,90 @@
+/* Review frame: 360 × 800 like the Figma frame, with the iOS status bar on top. */
+.stage {
+  display: grid;
+  place-items: center;
+  min-height: 100%;
+  padding: 32px 16px;
+  background: #e4e6ea;
+}
+
+.device {
+  position: relative;
+  width: 360px;
+  height: 800px;
+  overflow: hidden;
+  background: var(--color-background-surface);
+  box-shadow:
+    0 0 0 1px rgba(27, 27, 27, 0.06),
+    0 24px 60px -24px rgba(27, 27, 27, 0.35);
+  /* The status bar takes the place of the safe area. */
+  --safe-top: 44px;
+  --safe-bottom: 0px;
+}
+
+/* On a phone the screen fills the viewport, as it does in the webview. */
+.full {
+  height: 100%;
+}
+
+.statusBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 14px 0 10px;
+  pointer-events: none;
+}
+
+.statusContent {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+}
+
+.time {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  transform: translateX(-50%);
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: var(--color-icon-primary);
+  white-space: nowrap;
+}
+
+.location {
+  position: absolute;
+  top: 2px;
+  left: 62px;
+}
+
+.signal {
+  position: absolute;
+  top: 2px;
+  right: 62px;
+}
+
+.wifi {
+  position: absolute;
+  top: 2px;
+  right: 45px;
+}
+
+.battery {
+  position: absolute;
+  top: 2px;
+  right: 11px;
+  width: 32px;
+  height: 14px;
+}
+
+.battery img {
+  position: absolute;
+  left: 3px;
+  top: 1.5px;
+  max-width: none;
+}

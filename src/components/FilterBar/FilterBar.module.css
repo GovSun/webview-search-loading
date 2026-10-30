@@ -1,0 +1,66 @@
+.scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  padding: 8px 12px;
+}
+
+.chip {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 32px;
+  padding: 8px 12px;
+  border-radius: var(--radius-chip);
+  background-color: var(--components-control-bg-default);
+  transition:
+    transform var(--dur-release) var(--ease-out),
+    background-color var(--dur-release) var(--ease-out);
+}
+
+.iconChip {
+  padding: 8px 10px;
+}
+
+/* IM-13 S */
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.chip:active {
+  transform: scale(0.96);
+  background-color: var(--components-control-bg-pressed);
+  transition-duration: var(--dur-press);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chip:hover {
+    background-color: var(--components-control-bg-pressed);
+  }
+}

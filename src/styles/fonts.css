@@ -1,0 +1,27 @@
+/*
+ * Inter Mbank, subset to Latin + Cyrillic + punctuation/arrows (pyftsubset → woff2, ~21 KB per weight).
+ * Only the three weights the screen uses: IM-11 R (400), IM-15 M (500), IM-13 S (600).
+ */
+@font-face {
+  font-family: 'Inter Mbank';
+  src: url('../assets/fonts/InterMbank-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Mbank';
+  src: url('../assets/fonts/InterMbank-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Mbank';
+  src: url('../assets/fonts/InterMbank-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
