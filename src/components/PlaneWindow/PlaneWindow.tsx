@@ -1,15 +1,16 @@
 import { useEffect, useRef } from 'react';
 import frame from '../../assets/window/frame.svg';
 import rim from '../../assets/window/rim.svg';
+import wing from '../../assets/window/wing.png';
 import { CloudSky } from './cloudSky';
-import { Wing } from './Wing';
+import { Shade } from './Shade';
 import s from './PlaneWindow.module.css';
 
 /**
- * Figma «Иллюминатор» (903:120940), 109.856 × 148, without «Шторка». Frame, rim and glass mask
- * keep the Figma layers and sizes, with rounder contours (scripts/round-window.py).
+ * Figma «Иллюминатор» (903:120940), 109.856 × 148. Frame, rim and glass mask keep the Figma layers
+ * and sizes, with rounder contours (scripts/round-window.py).
  * Layers bottom to top: «Стекло» (daytime sky with drifting clouds on a canvas, the wing over it,
- * all masked by the opening), «Ободок», «Рама».
+ * all masked by the opening), «Ободок», «Шторка» (lowered a little, as on mikes.cv), «Рама».
  * The glass has the sky gradient as its background, so it is never empty before the first frame
  * or without canvas; with reduced motion the canvas shows one still frame.
  */
@@ -64,9 +65,10 @@ export function PlaneWindow() {
     <div className={s.window} aria-hidden="true">
       <div className={s.glass}>
         <canvas ref={canvasRef} className={s.canvas} />
-        <Wing />
+        <img className={s.wing} src={wing} width={70.0864} height={99.873} alt="" draggable={false} />
       </div>
       <img className={s.rim} src={rim} width={84.1197} height={111.908} alt="" draggable={false} />
+      <Shade />
       <img className={s.frame} src={frame} width={108.547} height={144.529} alt="" draggable={false} />
     </div>
   );

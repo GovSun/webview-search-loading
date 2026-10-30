@@ -53,15 +53,19 @@
 }
 
 /*
- * The wing flexes a little in flight: it pivots on the root, which is off the glass on the
- * right, so only the tip moves (about half a pixel). Constant motion, so ease-in-out both ways.
+ * The wing is copied from Figma 948:62116 (stock «Airplane window», layers 16–126 of group-R5),
+ * exported as a 4× PNG of that window's opening (1123 × 1597). The opening covers the glass by
+ * width and is centred vertically: 70.086 × 99.873 at top −4.066.
+ * It flexes a little in flight: it pivots on the root, which is off the glass on the right, so
+ * only the tip moves (about half a pixel). Constant motion, so ease-in-out both ways.
  */
 .wing {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+  left: 0;
+  top: -4.066px;
+  width: 70.0864px;
+  height: 99.873px;
+  max-width: none;
   transform-origin: 105% 70%;
   animation: wing-flex 4.8s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
 }
@@ -88,6 +92,15 @@
   width: 84.1197px;
   height: 111.908px;
   max-width: none;
+}
+
+/* «Шторка» lies over the rim and under the frame, in the rim's box. */
+.shade {
+  position: absolute;
+  left: 12.866px;
+  top: 16.613px;
+  width: 84.1197px;
+  height: 111.908px;
 }
 
 .frame {
