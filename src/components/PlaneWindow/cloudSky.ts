@@ -45,7 +45,7 @@ type CloudLayer = {
 
 /** Far bank: big soft masses, a touch darker, slow. */
 const BACK: CloudLayer = {
-  speed: 4,
+  speed: 8,
   count: 3,
   width: [34, 46],
   top: [67, 72],
@@ -58,7 +58,7 @@ const BACK: CloudLayer = {
 
 /** Near bank under the wing: three or four round bumps per cloud, brightest, fast. */
 const FRONT: CloudLayer = {
-  speed: 11,
+  speed: 22,
   count: 3,
   width: [40, 52],
   top: [75, 80],
