@@ -249,9 +249,12 @@ export class CloudSky {
     this.ctx = canvas.getContext('2d')!;
   }
 
-  /** (Re)builds the sky and the cloud images for the current pixel ratio. */
+  /**
+   * (Re)builds the sky and the cloud images for the current pixel ratio: canvas pixels per glass
+   * unit, i.e. the screen's ratio times the window's scale. Capped at 4 to keep the sprites small.
+   */
   setPixelRatio(ratio: number) {
-    const dpr = Math.min(3, Math.max(1, ratio));
+    const dpr = Math.min(4, Math.max(1, ratio));
     this.canvas.width = Math.round(GLASS_W * dpr);
     this.canvas.height = Math.round(GLASS_H * dpr);
 

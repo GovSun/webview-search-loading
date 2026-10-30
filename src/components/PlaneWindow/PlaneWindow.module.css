@@ -1,14 +1,17 @@
 /*
- * Positions are the Figma insets of «Иллюминатор» resolved to px (box 109.856 × 148):
+ * Positions are the Figma insets of «Иллюминатор» resolved to Figma px (box 109.856 × 148):
  *   Стекло  17.01% 18.1% 21.12% 18.1%            → 19.884, 25.175, 70.086 × 91.571
  *   Ободок  11.42% 11.97% 13.36% 11.97%, img −0.26% −0.34% → 12.866, 16.613
  *   Рама     3.92%  5.11%  5.12%  5.11%, img −3.12% −5.03% −4.25% → 0.653, 1.602
+ * Every length is in --u, one Figma px. The window is drawn 1.2× the Figma size (asked for a
+ * slightly bigger one); change --u to scale it, the cloud canvas follows (PlaneWindow.tsx).
  */
 .window {
+  --u: 1.2px;
   position: relative;
   flex-shrink: 0;
-  width: 109.856px;
-  height: 148px;
+  width: calc(109.856 * var(--u));
+  height: calc(148 * var(--u));
   pointer-events: none;
   -webkit-user-select: none;
   user-select: none;
@@ -16,10 +19,10 @@
 
 .glass {
   position: absolute;
-  left: 19.884px;
-  top: 25.175px;
-  width: 70.0864px;
-  height: 91.5712px;
+  left: calc(19.884 * var(--u));
+  top: calc(25.175 * var(--u));
+  width: calc(70.0864 * var(--u));
+  height: calc(91.5712 * var(--u));
   overflow: hidden;
   -webkit-mask-image: url('../../assets/window/glass-mask.svg');
   mask-image: url('../../assets/window/glass-mask.svg');
@@ -63,9 +66,9 @@
 .wing {
   position: absolute;
   left: 0;
-  top: -4.066px;
-  width: 70.0864px;
-  height: 99.873px;
+  top: calc(-4.066 * var(--u));
+  width: calc(70.0864 * var(--u));
+  height: calc(99.873 * var(--u));
   max-width: none;
   transform-origin: 105% 70%;
   animation: wing-flex 4.8s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
@@ -76,7 +79,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(-0.45deg) translateY(-0.15px);
+    transform: rotate(-0.45deg) translateY(calc(-0.15 * var(--u)));
   }
 }
 
@@ -88,27 +91,34 @@
 
 .rim {
   position: absolute;
-  left: 12.866px;
-  top: 16.613px;
-  width: 84.1197px;
-  height: 111.908px;
+  left: calc(12.866 * var(--u));
+  top: calc(16.613 * var(--u));
+  width: calc(84.1197 * var(--u));
+  height: calc(111.908 * var(--u));
   max-width: none;
 }
 
 /* «Шторка» lies over the rim and under the frame, in the rim's box. */
 .shade {
   position: absolute;
-  left: 12.866px;
-  top: 16.613px;
-  width: 84.1197px;
-  height: 111.908px;
+  left: calc(12.866 * var(--u));
+  top: calc(16.613 * var(--u));
+  width: calc(84.1197 * var(--u));
+  height: calc(111.908 * var(--u));
 }
 
+/*
+ * The frame's drop shadow is Figma's «Основа рамы (тень)» effect (y 0.763, blur σ 2.479,
+ * #4D3D38 at 42%), drawn here rather than by a filter inside frame.svg: in an <img> that filter
+ * was cut off at the SVG's edges and WebKit renders it at low resolution, so the shadow showed
+ * hard lines and pixels. drop-shadow() takes σ as its blur, the same as stdDeviation.
+ */
 .frame {
   position: absolute;
-  left: 0.653px;
-  top: 1.602px;
-  width: 108.547px;
-  height: 144.529px;
+  left: calc(0.653 * var(--u));
+  top: calc(1.602 * var(--u));
+  width: calc(108.547 * var(--u));
+  height: calc(144.529 * var(--u));
   max-width: none;
+  filter: drop-shadow(0 calc(0.763 * var(--u)) calc(2.479 * var(--u)) rgba(77, 61, 56, 0.42));
 }

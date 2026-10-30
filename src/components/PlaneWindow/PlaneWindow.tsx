@@ -2,13 +2,14 @@ import { useEffect, useRef } from 'react';
 import frame from '../../assets/window/frame.svg';
 import rim from '../../assets/window/rim.svg';
 import wing from '../../assets/window/wing.png';
-import { CloudSky } from './cloudSky';
+import { CloudSky, GLASS_W } from './cloudSky';
 import { Shade } from './Shade';
 import s from './PlaneWindow.module.css';
 
 /**
- * Figma «Иллюминатор» (903:120940), 109.856 × 148. Frame, rim and glass mask keep the Figma layers
- * and sizes, with rounder contours (scripts/round-window.py).
+ * Figma «Иллюминатор» (903:120940), 109.856 × 148, drawn 1.2× larger (--u in the CSS). Frame, rim
+ * and glass mask keep the Figma layers and proportions, with rounder contours
+ * (scripts/round-window.py).
  * Layers bottom to top: «Стекло» (daytime sky with drifting clouds on a canvas, the wing over it,
  * all masked by the opening), «Ободок», «Шторка» (lowered a little, as on mikes.cv), «Рама».
  * The glass has the sky gradient as its background, so it is never empty before the first frame
@@ -21,8 +22,13 @@ export function PlaneWindow() {
     const canvas = canvasRef.current;
     if (!canvas || !canvas.getContext('2d')) return;
 
+    // The sky is drawn in Figma glass units; the glass is shown larger than that (--u), so the
+    // canvas gets the screen's pixel ratio times that scale to stay sharp.
+    const pixelRatio = () =>
+      (window.devicePixelRatio || 1) * (canvas.getBoundingClientRect().width / GLASS_W || 1);
+
     const sky = new CloudSky(canvas);
-    sky.setPixelRatio(window.devicePixelRatio || 1);
+    sky.setPixelRatio(pixelRatio());
     canvas.dataset.ready = 'true';
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -44,7 +50,7 @@ export function PlaneWindow() {
     // Moving the webview to a screen with another pixel ratio rebuilds the sprites.
     let dprQuery = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
     const onDpr = () => {
-      sky.setPixelRatio(window.devicePixelRatio || 1);
+      sky.setPixelRatio(pixelRatio());
       dprQuery.removeEventListener('change', onDpr);
       dprQuery = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
       dprQuery.addEventListener('change', onDpr);
