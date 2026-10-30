@@ -54,8 +54,9 @@
 
 /*
  * The wing is copied from Figma 948:62116 (stock «Airplane window», layers 16–126 of group-R5),
- * exported as a 4× PNG of that window's opening (1123 × 1597). The opening covers the glass by
- * width and is centred vertically: 70.086 × 99.873 at top −4.066.
+ * exported as a 4× PNG of that window's opening (1123 × 1597) and turned from lavender to the DS
+ * greys (scripts/gray-wing.py). The opening covers the glass by width and is centred vertically:
+ * 70.086 × 99.873 at top −4.066.
  * It flexes a little in flight: it pivots on the root, which is off the glass on the right, so
  * only the tip moves (about half a pixel). Constant motion, so ease-in-out both ways.
  */
