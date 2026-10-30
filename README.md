@@ -9,6 +9,8 @@ npm run build          # dist/
 npm run build:single   # dist-single/index.html, всё в одном файле
 ```
 
+Живая версия: https://govsun.github.io/webview-search-loading/
+
 Каждый пуш в `main` собирает `dist/` и публикует его на GitHub Pages (`.github/workflows/pages.yml`, в настройках репозитория Pages → Source: GitHub Actions). Пути в сборке относительные, поэтому сайт работает по адресу `https://<user>.github.io/<repo>/`.
 
 На телефоне экран занимает весь viewport, как в webview. В браузере на десктопе он показан в рамке 360 × 800 со статус-баром из макета: рамка нужна только для сверки, статус-бар в приложении нативный.
