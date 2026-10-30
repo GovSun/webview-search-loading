@@ -53,7 +53,12 @@ export function SearchLoadingScreen({
       <main className={s.stage}>
         <div className={s.loader} role="status" aria-live="polite">
           <PlaneWindow />
-          <p className={s.message}>{message}</p>
+          <p className={s.message}>
+            {message}
+            <span className={s.shimmer} aria-hidden="true">
+              {message}
+            </span>
+          </p>
         </div>
       </main>
     </div>
