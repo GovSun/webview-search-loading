@@ -2,9 +2,10 @@
 
 Every pixel becomes its own luma (Rec. 709), so the shading of the original stays, with a faint
 cool tint like #F2F3F5 / #7E7F81; LIFT brightens the upper surface towards aluminium. Alpha is kept.
-Needs Pillow. Run after a new export from Figma:
+A .webp destination is written as WebP at quality 90 (about 5 KB instead of 21 KB as PNG, no
+visible difference); anything else as PNG. Needs Pillow. Run after a new export from Figma:
 
-    python3 scripts/gray-wing.py wing-figma.png src/assets/window/wing.png
+    python3 scripts/gray-wing.py wing-figma.png src/assets/window/wing.webp
 """
 import sys
 
@@ -23,7 +24,10 @@ def gray(r, g, b):
 def main(src, dst):
     im = Image.open(src).convert('RGBA')
     im.putdata([(*gray(r, g, b), a) for r, g, b, a in im.getdata()])
-    im.save(dst, optimize=True)
+    if dst.endswith('.webp'):
+        im.save(dst, 'WEBP', quality=90, method=6)
+    else:
+        im.save(dst, optimize=True)
 
 
 if __name__ == '__main__':
