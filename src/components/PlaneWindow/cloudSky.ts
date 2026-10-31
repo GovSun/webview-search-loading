@@ -47,10 +47,10 @@ type CloudLayer = {
 const BACK: CloudLayer = {
   speed: 8,
   count: 3,
-  width: [34, 46],
-  top: [67, 72],
-  drop: 6,
-  bump: [7.5, 13.5],
+  width: [40, 54],
+  top: [60, 65],
+  drop: 7,
+  bump: [9, 16],
   light: '#F4F8FD',
   dark: '#C3D1E3',
   crease: '138, 160, 190',
@@ -60,10 +60,10 @@ const BACK: CloudLayer = {
 const FRONT: CloudLayer = {
   speed: 22,
   count: 3,
-  width: [40, 52],
-  top: [75, 80],
-  drop: 7,
-  bump: [10, 17],
+  width: [48, 62],
+  top: [68, 73],
+  drop: 8,
+  bump: [12, 20.5],
   light: '#FFFFFF',
   dark: '#D3DEEB',
   crease: '148, 168, 196',
@@ -223,7 +223,7 @@ function drawSky(ctx: CanvasRenderingContext2D) {
 
   // Haze over the cloud tops.
   ctx.save();
-  ctx.translate(GLASS_W / 2, 72);
+  ctx.translate(GLASS_W / 2, 65);
   ctx.scale(GLASS_W * 0.75, 7);
   const haze = ctx.createRadialGradient(0, 0, 0, 0, 0, 1);
   haze.addColorStop(0, 'rgba(244, 249, 255, 0.7)');
