@@ -1,10 +1,7 @@
 /*
- * Positions are the Figma insets of «Иллюминатор» resolved to Figma px (box 109.856 × 148):
- *   Стекло  17.01% 18.1% 21.12% 18.1%            → 19.884, 25.175, 70.086 × 91.571
- *   Ободок  11.42% 11.97% 13.36% 11.97%, img −0.26% −0.34% → 12.866, 16.613
- *   Рама     3.92%  5.11%  5.12%  5.11%, img −3.12% −5.03% −4.25% → 0.653, 1.602
- * Every length is in --u, one Figma px. The window is drawn 1.2× the Figma size (asked for a
- * slightly bigger one); change --u to scale it, the cloud canvas follows (PlaneWindow.tsx).
+ * The window takes the Figma box of «Иллюминатор» (109.856 × 148) in the layout, drawn 1.2×
+ * larger (--u is one Figma px). The Rive artboard is that box plus an 8 px margin on every side
+ * for the frame's shadow, so the art hangs 8 units outside the box.
  */
 .window {
   --u: 1.2px;
@@ -17,108 +14,26 @@
   user-select: none;
 }
 
-.glass {
+.art {
   position: absolute;
-  left: calc(19.884 * var(--u));
-  top: calc(25.175 * var(--u));
-  width: calc(70.0864 * var(--u));
-  height: calc(91.5712 * var(--u));
-  overflow: hidden;
-  -webkit-mask-image: url('../../assets/window/glass-mask.svg');
-  mask-image: url('../../assets/window/glass-mask.svg');
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  /* Same stops as SKY_STOPS in cloudSky.ts: shows before the first frame and without canvas. */
-  background: linear-gradient(
-    to bottom,
-    #4596f0 0%,
-    #4c9df6 7%,
-    #62aef8 45%,
-    #86c1fa 66%,
-    #b9dbfc 78%,
-    #dcedfd 88%,
-    #edf5fe 100%
-  );
+  left: calc(-8 * var(--u));
+  top: calc(-8 * var(--u));
+  width: calc(125.856 * var(--u));
+  height: calc(164 * var(--u));
+  max-width: none;
 }
 
-.canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+/* The Rive canvas fades in once the file and the runtime have loaded, instead of popping. */
+.art[data-ready] {
   opacity: 0;
+  transition: opacity 200ms var(--ease-out);
 }
 
-.canvas[data-ready='true'] {
+.art[data-ready='true'] {
   opacity: 1;
 }
 
-/*
- * The wing is copied from Figma 948:62116 (stock «Airplane window», layers 16–126 of group-R5),
- * exported as a 4× PNG of that window's opening (1123 × 1597) and turned from lavender to the DS
- * greys (scripts/gray-wing.py). The opening covers the glass by width and is centred vertically:
- * 70.086 × 99.873 at top −4.066.
- * It flexes a little in flight: it pivots on the root, which is off the glass on the right, so
- * only the tip moves (about half a pixel). Constant motion, so ease-in-out both ways.
- */
-.wing {
-  position: absolute;
-  left: 0;
-  top: calc(-4.066 * var(--u));
-  width: calc(70.0864 * var(--u));
-  height: calc(99.873 * var(--u));
-  max-width: none;
-  transform-origin: 105% 70%;
-  animation: wing-flex 4.8s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
-}
-
-@keyframes wing-flex {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-0.45deg) translateY(calc(-0.15 * var(--u)));
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .wing {
-    animation: none;
-  }
-}
-
-.rim {
-  position: absolute;
-  left: calc(12.866 * var(--u));
-  top: calc(16.613 * var(--u));
-  width: calc(84.1197 * var(--u));
-  height: calc(111.908 * var(--u));
-  max-width: none;
-}
-
-/* «Шторка» lies over the rim and under the frame, in the rim's box. */
-.shade {
-  position: absolute;
-  left: calc(12.866 * var(--u));
-  top: calc(16.613 * var(--u));
-  width: calc(84.1197 * var(--u));
-  height: calc(111.908 * var(--u));
-}
-
-/*
- * The frame's drop shadow is Figma's «Основа рамы (тень)» effect (y 0.763, blur σ 2.479,
- * #4D3D38 at 42%), drawn here rather than by a filter inside frame.svg: in an <img> that filter
- * was cut off at the SVG's edges and WebKit renders it at low resolution, so the shadow showed
- * hard lines and pixels. drop-shadow() takes σ as its blur, the same as stdDeviation.
- */
-.frame {
-  position: absolute;
-  left: calc(0.653 * var(--u));
-  top: calc(1.602 * var(--u));
-  width: calc(108.547 * var(--u));
-  height: calc(144.529 * var(--u));
-  max-width: none;
-  filter: drop-shadow(0 calc(0.763 * var(--u)) calc(2.479 * var(--u)) rgba(77, 61, 56, 0.42));
+.rive {
+  width: 100%;
+  height: 100%;
 }

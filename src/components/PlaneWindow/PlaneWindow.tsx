@@ -1,81 +1,27 @@
-import { useEffect, useRef } from 'react';
-import frame from '../../assets/window/frame.svg';
-import rim from '../../assets/window/rim.svg';
-import wing from '../../assets/window/wing.png';
-import { CloudSky, GLASS_W } from './cloudSky';
-import { Shade } from './Shade';
+import { lazy, Suspense } from 'react';
+import still from '../../assets/window/plane-window-still.webp';
 import s from './PlaneWindow.module.css';
 
+// The Rive runtime is a separate chunk: the screen renders without waiting for it.
+const RiveWindow = lazy(() => import('./RiveWindow'));
+
+const reducedMotion =
+  typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 /**
- * Figma «Иллюминатор» (903:120940), 109.856 × 148, drawn 1.2× larger (--u in the CSS). Frame, rim
- * and glass mask keep the Figma layers and proportions, with rounder contours
- * (scripts/round-window.py).
- * Layers bottom to top: «Стекло» (daytime sky with drifting clouds on a canvas, the wing over it,
- * all masked by the opening), «Ободок», «Шторка» (lowered a little, as on mikes.cv), «Рама».
- * The glass has the sky gradient as its background, so it is never empty before the first frame
- * or without canvas; with reduced motion the canvas shows one still frame.
+ * The airplane window, animated in Rive. With reduced motion it is a still of the same scene
+ * after the shade has gone up (plane-window-still.webp, 3×), and the runtime is never loaded.
  */
 export function PlaneWindow() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas || !canvas.getContext('2d')) return;
-
-    // The sky is drawn in Figma glass units; the glass is shown larger than that (--u), so the
-    // canvas gets the screen's pixel ratio times that scale to stay sharp.
-    const pixelRatio = () =>
-      (window.devicePixelRatio || 1) * (canvas.getBoundingClientRect().width / GLASS_W || 1);
-
-    const sky = new CloudSky(canvas);
-    sky.setPixelRatio(pixelRatio());
-    canvas.dataset.ready = 'true';
-
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let inView = true;
-    const sync = () => {
-      if (reduced.matches || document.hidden || !inView) sky.stop();
-      else sky.start();
-    };
-
-    // Paused off-screen and in a hidden tab or a backgrounded webview.
-    const io = new IntersectionObserver(([entry]) => {
-      inView = entry.isIntersecting;
-      sync();
-    });
-    io.observe(canvas);
-    document.addEventListener('visibilitychange', sync);
-    reduced.addEventListener('change', sync);
-
-    // Moving the webview to a screen with another pixel ratio rebuilds the sprites.
-    let dprQuery = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
-    const onDpr = () => {
-      sky.setPixelRatio(pixelRatio());
-      dprQuery.removeEventListener('change', onDpr);
-      dprQuery = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
-      dprQuery.addEventListener('change', onDpr);
-    };
-    dprQuery.addEventListener('change', onDpr);
-
-    sync();
-    return () => {
-      sky.stop();
-      io.disconnect();
-      document.removeEventListener('visibilitychange', sync);
-      reduced.removeEventListener('change', sync);
-      dprQuery.removeEventListener('change', onDpr);
-    };
-  }, []);
-
   return (
     <div className={s.window} aria-hidden="true">
-      <div className={s.glass}>
-        <canvas ref={canvasRef} className={s.canvas} />
-        <img className={s.wing} src={wing} width={70.0864} height={99.873} alt="" draggable={false} />
-      </div>
-      <img className={s.rim} src={rim} width={84.1197} height={111.908} alt="" draggable={false} />
-      <Shade />
-      <img className={s.frame} src={frame} width={108.547} height={144.529} alt="" draggable={false} />
+      {reducedMotion ? (
+        <img className={s.art} src={still} width={151} height={197} alt="" draggable={false} />
+      ) : (
+        <Suspense fallback={null}>
+          <RiveWindow />
+        </Suspense>
+      )}
     </div>
   );
 }

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84.1197" height="111.908" viewBox="0 0 84.1197 111.908" fill="none">
+  <!-- «Шторка» from src/components/PlaneWindow/Shade.tsx as a static file, in rim.svg units. -->
+  <defs>
+    <clipPath id="shade-rim">
+      <path d="M42.0598 0.2861C65.1308 0.2861 83.8336 17.1186 83.8336 37.8825L83.8336 74.0256C83.8336 94.7895 65.1308 111.622 42.0598 111.622C18.9888 111.622 0.2861 94.7895 0.2861 74.0256L0.2861 37.8825C0.2861 17.1186 18.9888 0.2861 42.0598 0.2861Z" />
+    </clipPath>
+    <clipPath id="shade-panel">
+      <path d="M-1.7 -2H85.82V7.63Q42.06 24.33 -1.7 7.63Z" />
+    </clipPath>
+    <linearGradient id="shade-lip" x1="0" y1="12.4" x2="0" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B9AD9F" />
+      <stop offset="0.5" stop-color="#C2B9AF" />
+      <stop offset="1" stop-color="#C1BAB1" />
+    </linearGradient>
+    <linearGradient id="shade-handle" x1="0" y1="8" x2="0" y2="11.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A39889" />
+      <stop offset="0.2" stop-color="#938A7F" />
+      <stop offset="0.5" stop-color="#A59E96" />
+      <stop offset="0.65" stop-color="#C0B8B4" />
+      <stop offset="0.75" stop-color="#B6ADAA" />
+      <stop offset="1" stop-color="#C7BEB1" />
+    </linearGradient>
+    <filter id="shade-soft" x="-25" y="-25" width="135" height="165" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3.06" />
+    </filter>
+    <filter id="shade-tight" x="-25" y="-25" width="135" height="165" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="0.83" />
+    </filter>
+  </defs>
+  <g clip-path="url(#shade-rim)">
+    <g clip-path="url(#shade-panel)">
+      <path id="Панель" d="M-1.7 -2H85.82V7.63Q42.06 24.33 -1.7 7.63Z" fill="#AFA397" />
+      <path id="Бортик" d="M-1.7 6.53Q42.06 19.23 85.82 6.53V7.63Q42.06 24.33 -1.7 7.63Z" fill="url(#shade-lip)" />
+      <path id="Ручка" d="M21.2 8L62.9 8Q64.3 8 63.9 8.9Q42.06 13.6 20.2 8.9Q19.8 8 21.2 8Z" fill="url(#shade-handle)" />
+      <path id="Кромка ручки" d="M20.9 9.05Q42.06 13.35 63.2 9.05" stroke="#ECE2DA" stroke-width="0.4" stroke-linecap="round" />
+      <path id="Кромка" d="M-1.7 7.63Q42.06 24.33 85.82 7.63" stroke="#E2DBD4" stroke-width="0.7" />
+      <path id="Тень у ободка" d="M-25 -25H110V140H-25ZM42.06 1.406C64.517 1.406 82.723 17.791 82.723 38.003L82.723 73.905C82.723 94.117 64.517 110.502 42.06 110.502C19.603 110.502 1.397 94.117 1.397 73.905L1.397 38.003C1.397 17.791 19.603 1.406 42.06 1.406Z" fill-rule="evenodd" fill="rgba(28, 25, 22, 0.42)" filter="url(#shade-soft)" />
+      <path id="Тень у ободка, резкая" d="M-25 -25H110V140H-25ZM42.06 1.406C64.517 1.406 82.723 17.791 82.723 38.003L82.723 73.905C82.723 94.117 64.517 110.502 42.06 110.502C19.603 110.502 1.397 94.117 1.397 73.905L1.397 38.003C1.397 17.791 19.603 1.406 42.06 1.406Z" fill-rule="evenodd" fill="rgba(28, 25, 22, 0.3)" filter="url(#shade-tight)" />
+    </g>
+  </g>
+</svg>

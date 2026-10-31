@@ -1,0 +1,8 @@
+name: project
+logs:
+  file: build/rive.log
+  problems: build/problems.log
+main: "Plane window"
+push:
+  projectId: 470397
+  fileId: 2696408

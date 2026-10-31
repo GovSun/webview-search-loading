@@ -1,0 +1,486 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="1:7" viewModelId="1:14" viewModelInstanceId="1:15" includeInExport="false" width="125.856" height="164" styleId="1:5" name="Plane window" id="1:2">
+        <Node x="8.6529999" y="9.6020002" name="Рама" id="3:12169">
+            <Node x="54.273899" y="71.50145" name="Рама" id="3:12367">
+                <Shape x="4.9999999e-05" y="-4.9999999e-05" name="Кант" id="3:12368">
+                    <PointsPath isClosed="true" id="3:12369">
+                        <CubicDetachedVertex outDistance="27.1094" x="4.9999999e-05" y="-67.076599" id="3:12370"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="24.3986" x="49.086048" y="-22.899099" id="3:12371"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="24.3985" x="49.086048" y="22.8992" id="3:12372"/>
+                        <CubicDetachedVertex inDistance="27.1094" outRotation="3.1415927" outDistance="27.109501" x="4.9999999e-05" y="67.076599" id="3:12373"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="24.3985" x="-49.086048" y="22.8992" id="3:12374"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="24.3986" x="-49.086048" y="-22.899099" id="3:12375"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="27.109501" x="4.9999999e-05" y="-67.076599" id="3:12376"/>
+                    </PointsPath>
+                    <Stroke thickness="0.343299" id="3:12469">
+                        <SolidColor colorValue="FFB3AAA4" id="3:12377"/>
+                    </Stroke>
+                </Shape>
+                <Shape name="Свет справа" id="3:12378">
+                    <PointsPath isClosed="true" id="3:12379">
+                        <CubicDetachedVertex outDistance="27.236" y="-67.30555" id="3:12380"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="24.5124" x="49.315102" y="-22.921949" id="3:12381"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="24.5124" x="49.315102" y="22.921949" id="3:12382"/>
+                        <CubicDetachedVertex inDistance="27.236" outRotation="3.1415927" outDistance="27.236" y="67.30555" id="3:12383"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="24.5124" x="-49.315102" y="22.921949" id="3:12384"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="24.5124" x="-49.315102" y="-22.921949" id="3:12385"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="27.236" y="-67.30555" id="3:12386"/>
+                    </PointsPath>
+                    <PointsPath isClosed="true" id="3:12387">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.0711" x="-0.00030000001" y="-56.215149" id="3:12388"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.773499" y="-18.61875" id="3:12389"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.773499" y="17.524151" id="3:12390"/>
+                        <CubicDetachedVertex inDistance="23.0711" outRotation="3.1415927" outDistance="23.070999" x="-0.00030000001" y="55.120548" id="3:12391"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.773998" y="17.524151" id="3:12392"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.773998" y="-18.61875" id="3:12393"/>
+                    </PointsPath>
+                    <Fill fillRule="evenOdd" id="3:12470">
+                        <LinearGradient startX="-49.31514" startY="-67.305573" endX="49.315102" endY="-67.305573" id="3:12394">
+                            <GradientStop colorValue="06000000" id="3:12395"/>
+                            <GradientStop colorValue="00FFFFFF" position="0.5" id="3:12396"/>
+                            <GradientStop colorValue="66FFFFFF" position="1" id="3:12397"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+                <Shape x="-0.00015000001" y="0.030850001" name="Внутренняя грань" id="3:12398">
+                    <PointsPath isClosed="true" id="3:12399">
+                        <CubicDetachedVertex outDistance="25.1745" x="-4.9999999e-05" y="-60.172699" id="3:12400"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="22.657" x="45.582451" y="-19.1485" id="3:12401"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="22.657" x="45.582451" y="19.1485" id="3:12402"/>
+                        <CubicDetachedVertex inDistance="25.1745" outRotation="3.1415927" outDistance="25.1745" x="-4.9999999e-05" y="60.172699" id="3:12403"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="22.657" x="-45.582451" y="19.1485" id="3:12404"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="22.657" x="-45.582451" y="-19.1485" id="3:12405"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="25.1745" x="-4.9999999e-05" y="-60.172699" id="3:12406"/>
+                    </PointsPath>
+                    <PointsPath isClosed="true" id="3:12407">
+                        <CubicDetachedVertex outDistance="23.0711" x="-4.9999999e-05" y="-56.245701" id="3:12408"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.77375" y="-18.6493" id="3:12409"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.77375" y="17.493299" id="3:12410"/>
+                        <CubicDetachedVertex inDistance="23.0711" outRotation="3.1415927" outDistance="23.070999" x="-4.9999999e-05" y="55.089699" id="3:12411"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.77375" y="17.493299" id="3:12412"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.77375" y="-18.6493" id="3:12413"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" x="-4.9999999e-05" y="-56.245701" id="3:12414"/>
+                    </PointsPath>
+                    <Fill fillRule="evenOdd" id="3:12471">
+                        <LinearGradient startX="-45.5825" startY="-60.172699" endX="-45.5825" endY="60.172699" id="3:12415">
+                            <GradientStop colorValue="FFC2BAB3" id="3:12416"/>
+                            <GradientStop colorValue="FFB1A69C" position="0.0111" id="3:12417"/>
+                            <GradientStop colorValue="FF968A7D" position="0.0222" id="3:12418"/>
+                            <GradientStop colorValue="FF857869" position="0.033300001" id="3:12419"/>
+                            <GradientStop colorValue="FFD8D0C9" position="0.060199998" id="3:12420"/>
+                            <GradientStop colorValue="FFECE6E1" position="0.099799998" id="3:12421"/>
+                            <GradientStop colorValue="FFF5F2ED" position="0.45640001" id="3:12422"/>
+                            <GradientStop colorValue="FFF9F6F2" position="0.95719999" id="3:12423"/>
+                            <GradientStop colorValue="FFF4F0EB" position="1" id="3:12424"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+                <Shape name="Внешняя грань" id="3:12425">
+                    <PointsPath isClosed="true" id="3:12426">
+                        <CubicDetachedVertex outDistance="27.236" y="-67.30555" id="3:12427"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="24.5124" x="49.315102" y="-22.921949" id="3:12428"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="24.5124" x="49.315102" y="22.921949" id="3:12429"/>
+                        <CubicDetachedVertex inDistance="27.236" outRotation="3.1415927" outDistance="27.236" y="67.30555" id="3:12430"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="24.5124" x="-49.315102" y="22.921949" id="3:12431"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="24.5124" x="-49.315102" y="-22.921949" id="3:12432"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="27.236" y="-67.30555" id="3:12433"/>
+                    </PointsPath>
+                    <PointsPath isClosed="true" id="3:12434">
+                        <CubicDetachedVertex outDistance="25.1745" x="-0.00030000001" y="-60.142052" id="3:12435"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="22.657" x="45.582199" y="-19.117849" id="3:12436"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="22.657" x="45.582199" y="19.17935" id="3:12437"/>
+                        <CubicDetachedVertex inDistance="25.1745" outRotation="3.1415927" outDistance="25.1744" x="-0.00030000001" y="60.203548" id="3:12438"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="22.657" x="-45.582699" y="19.17935" id="3:12439"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="22.657" x="-45.582699" y="-19.117849" id="3:12440"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="25.1744" x="-0.00030000001" y="-60.142052" id="3:12441"/>
+                    </PointsPath>
+                    <Fill fillRule="evenOdd" id="3:12472">
+                        <LinearGradient startX="-49.31514" startY="-67.305573" endX="-49.31514" endY="67.30555" id="3:12442">
+                            <GradientStop colorValue="FFCBC4BE" id="3:12443"/>
+                            <GradientStop colorValue="FFC3BBB5" position="0.036200002" id="3:12444"/>
+                            <GradientStop colorValue="FFC3BBB4" position="0.056000002" id="3:12445"/>
+                            <GradientStop colorValue="FFD3CBC6" position="0.1779" id="3:12446"/>
+                            <GradientStop colorValue="FFD9D1CC" position="0.3479" id="3:12447"/>
+                            <GradientStop colorValue="FFDAD3CE" position="0.7446" id="3:12448"/>
+                            <GradientStop colorValue="FFD9D2CF" position="0.9501" id="3:12449"/>
+                            <GradientStop colorValue="FFD2CBC7" position="1" id="3:12450"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+                <Node name="Основа рамы (тень)" id="3:12451">
+                    <Shape name="Основа рамы" id="3:12452">
+                        <PointsPath isClosed="true" id="3:12453">
+                            <CubicDetachedVertex outDistance="27.236" y="-67.30555" id="3:12454"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="24.5124" x="49.315102" y="-22.921949" id="3:12455"/>
+                            <CubicDetachedVertex outRotation="1.5707964" outDistance="24.5124" x="49.315102" y="22.921949" id="3:12456"/>
+                            <CubicDetachedVertex inDistance="27.236" outRotation="3.1415927" outDistance="27.236" y="67.30555" id="3:12457"/>
+                            <CubicDetachedVertex inRotation="1.5707964" inDistance="24.5124" x="-49.315102" y="22.921949" id="3:12458"/>
+                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="24.5124" x="-49.315102" y="-22.921949" id="3:12459"/>
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="27.236" y="-67.30555" id="3:12460"/>
+                        </PointsPath>
+                        <PointsPath isClosed="true" id="3:12461">
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.0711" x="-0.00030000001" y="-56.215149" id="3:12462"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.773499" y="-18.61875" id="3:12463"/>
+                            <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.773499" y="17.524151" id="3:12464"/>
+                            <CubicDetachedVertex inDistance="23.0711" outRotation="3.1415927" outDistance="23.070999" x="-0.00030000001" y="55.120548" id="3:12465"/>
+                            <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.773998" y="17.524151" id="3:12466"/>
+                            <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.773998" y="-18.61875" id="3:12467"/>
+                        </PointsPath>
+                        <Fill fillRule="evenOdd" id="3:12473">
+                            <SolidColor colorValue="FFD6CFC9" id="3:12468"/>
+                        </Fill>
+                    </Shape>
+                </Node>
+            </Node>
+        </Node>
+        <Node x="20.865999" y="24.613001" name="Шторка" id="3:12166">
+            <Node x="42.5" y="57.5" id="3:12171">
+                <Node id="3:12172">
+                    <Shape name="Тень у ободка, резкая" id="3:12490">
+                        <PointsPath isClosed="true" id="3:12491">
+                            <StraightVertex x="-67.5" y="-82.5" id="3:12492"/>
+                            <StraightVertex x="67.5" y="-82.5" id="3:12493"/>
+                            <StraightVertex x="67.5" y="82.5" id="3:12494"/>
+                            <StraightVertex x="-67.5" y="82.5" id="3:12495"/>
+                        </PointsPath>
+                        <PointsPath isClosed="true" isClockwise="false" isHole="true" id="3:12496">
+                            <CubicMirroredVertex rotation="3.1415927" distance="22.457001" x="-0.44" y="-56.094002" id="3:12497"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.212" x="-41.103001" y="-19.497" id="3:12498"/>
+                            <StraightVertex x="-41.103001" y="16.405001" id="3:12499"/>
+                            <CubicMirroredVertex distance="22.457001" x="-0.44" y="53.001999" id="3:12500"/>
+                            <CubicDetachedVertex inRotation="1.5707964" inDistance="20.212" x="40.223" y="16.405001" id="3:12501"/>
+                            <StraightVertex x="40.223" y="-19.497" id="3:12502"/>
+                        </PointsPath>
+                        <Fill fillRule="clockwise" id="3:12503">
+                            <SolidColor colorValue="4D1C1916" id="3:12504"/>
+                            <Feather strength="1.66" id="3:12505"/>
+                        </Fill>
+                    </Shape>
+                    <Shape name="Тень у ободка" id="3:12474">
+                        <PointsPath isClosed="true" id="3:12475">
+                            <StraightVertex x="-67.5" y="-82.5" id="3:12476"/>
+                            <StraightVertex x="67.5" y="-82.5" id="3:12477"/>
+                            <StraightVertex x="67.5" y="82.5" id="3:12478"/>
+                            <StraightVertex x="-67.5" y="82.5" id="3:12479"/>
+                        </PointsPath>
+                        <PointsPath isClosed="true" isClockwise="false" isHole="true" id="3:12480">
+                            <CubicMirroredVertex rotation="3.1415927" distance="22.457001" x="-0.44" y="-56.094002" id="3:12481"/>
+                            <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.212" x="-41.103001" y="-19.497" id="3:12482"/>
+                            <StraightVertex x="-41.103001" y="16.405001" id="3:12483"/>
+                            <CubicMirroredVertex distance="22.457001" x="-0.44" y="53.001999" id="3:12484"/>
+                            <CubicDetachedVertex inRotation="1.5707964" inDistance="20.212" x="40.223" y="16.405001" id="3:12485"/>
+                            <StraightVertex x="40.223" y="-19.497" id="3:12486"/>
+                        </PointsPath>
+                        <Fill fillRule="clockwise" id="3:12487">
+                            <SolidColor colorValue="6B1C1916" id="3:12488"/>
+                            <Feather strength="6.1199999" id="3:12489"/>
+                        </Fill>
+                    </Shape>
+                    <Shape x="-0.44" y="-44.303333" name="Кромка" id="3:12201">
+                        <PointsPath isClockwise="false" id="3:12202">
+                            <CubicDetachedVertex outRotation="0.364568" outDistance="31.225542" x="-43.759998" y="-5.5666666" id="3:12203"/>
+                            <CubicDetachedVertex inRotation="2.7770247" inDistance="31.225542" x="43.759998" y="-5.5666666" id="3:12204"/>
+                        </PointsPath>
+                        <Stroke thickness="0.69999999" id="3:12261">
+                            <SolidColor colorValue="FFE2DBD4" id="3:12205"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape x="-0.44999999" y="-47.016666" name="Кромка ручки" id="3:12206">
+                        <PointsPath id="3:12207">
+                            <CubicDetachedVertex outRotation="0.20048365" outDistance="14.394993" x="-21.15" y="-1.4333333" id="3:12208"/>
+                            <CubicDetachedVertex inRotation="2.9409244" inDistance="14.381927" x="21.15" y="-1.4333333" id="3:12209"/>
+                        </PointsPath>
+                        <Stroke thickness="0.40000001" cap="round" id="3:12262">
+                            <SolidColor colorValue="FFECE2DA" id="3:12210"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape x="-0.44999999" y="-47.483334" name="Ручка" id="3:12211">
+                        <PointsPath isClosed="true" id="3:12212">
+                            <CubicDetachedVertex inRotation="3.1415927" inDistance="0.93333334" x="-20.85" y="-2.0166667" id="3:12213"/>
+                            <CubicDetachedVertex outDistance="0.93333334" x="20.85" y="-2.0166667" id="3:12214"/>
+                            <CubicDetachedVertex inRotation="-1.152572" inDistance="0.65659052" outRotation="2.9296238" outDistance="14.893333" x="21.85" y="-1.1166667" id="3:12215"/>
+                            <CubicDetachedVertex inRotation="0.21178053" inDistance="14.906368" outRotation="-1.9890207" outDistance="0.65659052" x="-21.85" y="-1.1166667" id="3:12216"/>
+                        </PointsPath>
+                        <Fill id="3:12263">
+                            <LinearGradient startX="-42.049999" startY="-2.0166667" endX="-42.049999" endY="1.2833333" id="3:12217">
+                                <GradientStop colorValue="FFA39889" id="3:12218"/>
+                                <GradientStop colorValue="FF938A7F" position="0.2" id="3:12219"/>
+                                <GradientStop colorValue="FFA59E96" position="0.5" id="3:12220"/>
+                                <GradientStop colorValue="FFC0B8B4" position="0.64999998" id="3:12221"/>
+                                <GradientStop colorValue="FFB6ADAA" position="0.75" id="3:12222"/>
+                                <GradientStop colorValue="FFC7BEB1" position="1" id="3:12223"/>
+                            </LinearGradient>
+                        </Fill>
+                    </Shape>
+                    <Shape x="-0.44" y="-44.853333" name="Бортик" id="3:12224">
+                        <PointsPath isClosed="true" id="3:12225">
+                            <CubicDetachedVertex outRotation="0.28245977" outDistance="30.377094" x="-43.759998" y="-6.1166668" id="3:12226"/>
+                            <CubicDetachedVertex inRotation="2.8591328" inDistance="30.377094" x="43.759998" y="-6.1166668" id="3:12227"/>
+                            <CubicDetachedVertex outRotation="2.7770247" outDistance="31.225542" x="43.759998" y="-5.0166669" id="3:12228"/>
+                            <CubicDetachedVertex inRotation="0.364568" inDistance="31.225542" x="-43.759998" y="-5.0166669" id="3:12229"/>
+                        </PointsPath>
+                        <Fill id="3:12264">
+                            <LinearGradient startX="-42.060001" startY="-0.24666667" endX="-42.060001" endY="3.3533332" id="3:12230">
+                                <GradientStop colorValue="FFB9AD9F" id="3:12231"/>
+                                <GradientStop colorValue="FFC2B9AF" position="0.5" id="3:12232"/>
+                                <GradientStop colorValue="FFC1BAB1" position="1" id="3:12233"/>
+                            </LinearGradient>
+                        </Fill>
+                    </Shape>
+                    <Shape x="-0.44" y="-49.118332" name="Панель" id="3:12234">
+                        <PointsPath isClosed="true" id="3:12235">
+                            <StraightVertex x="-43.759998" y="-108.38167" id="3:12236"/>
+                            <StraightVertex x="43.759998" y="-108.38167" id="3:12237"/>
+                            <CubicDetachedVertex outRotation="2.7770247" outDistance="31.225542" x="43.759998" y="-0.75166667" id="3:12238"/>
+                            <CubicDetachedVertex inRotation="0.364568" inDistance="31.225542" x="-43.759998" y="-0.75166667" id="3:12239"/>
+                        </PointsPath>
+                        <Fill id="3:12265">
+                            <SolidColor colorValue="FFAFA397" id="3:12240"/>
+                        </Fill>
+                    </Shape>
+                    <ClippingShape sourceId="3:12243" id="3:12241"/>
+                </Node>
+                <ClippingShape sourceId="3:12250" id="3:12242"/>
+            </Node>
+            <Shape name="shade-panel" id="3:12243">
+                <Node x="42.060001" y="8.3816671" id="3:12244">
+                    <PointsPath isClosed="true" id="3:12245">
+                        <StraightVertex x="-43.759998" y="-108.38167" id="3:12246"/>
+                        <StraightVertex x="43.759998" y="-108.38167" id="3:12247"/>
+                        <CubicDetachedVertex outRotation="2.7770247" outDistance="31.225542" x="43.759998" y="-0.75166667" id="3:12248"/>
+                        <CubicDetachedVertex inRotation="0.364568" inDistance="31.225542" x="-43.759998" y="-0.75166667" id="3:12249"/>
+                    </PointsPath>
+                </Node>
+            </Shape>
+            <Shape name="shade-rim" id="3:12250">
+                <Node x="42.059849" y="55.954048" id="3:12251">
+                    <PointsPath isClosed="true" id="3:12252">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.070999" x="-4.9999999e-05" y="-55.66795" id="3:12253"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.77375" y="-18.07155" id="3:12254"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.77375" y="18.07155" id="3:12255"/>
+                        <CubicDetachedVertex inDistance="23.070999" outRotation="3.1415927" outDistance="23.070999" x="-4.9999999e-05" y="55.66795" id="3:12256"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.77375" y="18.07155" id="3:12257"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.77375" y="-18.07155" id="3:12258"/>
+                    </PointsPath>
+                </Node>
+            </Shape>
+        </Node>
+        <Node x="20.865999" y="24.613001" name="Ободок" id="3:12167">
+            <Node x="42.059849" y="55.954048" name="Ободок" id="3:12267">
+                <Shape name="Край ободка" id="3:12268">
+                    <PointsPath isClosed="true" id="3:12269">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.070999" x="-4.9999999e-05" y="-55.66795" id="3:12270"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.77375" y="-18.07155" id="3:12271"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.77375" y="18.07155" id="3:12272"/>
+                        <CubicDetachedVertex inDistance="23.070999" outRotation="3.1415927" outDistance="23.070999" x="-4.9999999e-05" y="55.66795" id="3:12273"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.77375" y="18.07155" id="3:12274"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.77375" y="-18.07155" id="3:12275"/>
+                    </PointsPath>
+                    <Stroke thickness="0.57216501" id="3:12348">
+                        <SolidColor colorValue="FF94877B" id="3:12276"/>
+                    </Stroke>
+                </Shape>
+                <Shape x="0.00019999999" y="-1.6034499" name="Блик у стекла" id="3:12277">
+                    <PointsPath isClosed="true" id="3:12278">
+                        <CubicDetachedVertex outDistance="19.195801" x="4.9999999e-05" y="-45.4995" id="3:12279"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="17.2763" x="34.757149" y="-14.2181" id="3:12280"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="17.276199" x="34.757149" y="14.2181" id="3:12281"/>
+                        <CubicDetachedVertex inDistance="19.195801" outRotation="3.1415927" outDistance="19.1959" x="4.9999999e-05" y="45.4995" id="3:12282"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="17.276199" x="-34.757149" y="14.2181" id="3:12283"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="17.2763" x="-34.757149" y="-14.2181" id="3:12284"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="19.1959" x="4.9999999e-05" y="-45.4995" id="3:12285"/>
+                    </PointsPath>
+                    <Stroke thickness="0.57216501" id="3:12349">
+                        <SolidColor colorValue="FFFFFFFF" id="3:12286"/>
+                    </Stroke>
+                </Shape>
+                <Shape x="9.9999997e-05" y="-1.63255" name="Линия у стекла" id="3:12287">
+                    <PointsPath isClosed="true" id="3:12288">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="19.299101" outDistance="19.299" x="4.9999999e-05" y="-46.137501" id="3:12289"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="17.3692" x="34.94405" y="-14.6879" id="3:12290"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="17.369101" x="34.94405" y="14.6879" id="3:12291"/>
+                        <CubicDetachedVertex inDistance="19.299" outRotation="3.1415927" outDistance="19.299101" x="4.9999999e-05" y="46.137501" id="3:12292"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="17.369101" x="-34.94405" y="14.6879" id="3:12293"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="17.3692" x="-34.94405" y="-14.6879" id="3:12294"/>
+                    </PointsPath>
+                    <Stroke thickness="0.38144299" id="3:12350">
+                        <SolidColor colorValue="FFCDC7BE" id="3:12295"/>
+                    </Stroke>
+                </Shape>
+                <Shape x="0.00025000001" y="-0.79170001" name="Паз" id="3:12296">
+                    <PointsPath isClosed="true" id="3:12297">
+                        <CubicDetachedVertex outDistance="22.3463" y="-53.08165" id="3:12298"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.1117" x="40.461601" y="-16.66625" id="3:12299"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.1117" x="40.461601" y="16.666149" id="3:12300"/>
+                        <CubicDetachedVertex inDistance="22.3463" outRotation="3.1415927" outDistance="22.3463" y="53.08165" id="3:12301"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.1117" x="-40.461601" y="16.666149" id="3:12302"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.1117" x="-40.461601" y="-16.66625" id="3:12303"/>
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="22.3463" y="-53.08165" id="3:12304"/>
+                    </PointsPath>
+                    <Stroke thickness="0.47680399" id="3:12351">
+                        <SolidColor colorValue="FFA49A8E" id="3:12305"/>
+                    </Stroke>
+                </Shape>
+                <Shape name="Внешний бортик" id="3:12306">
+                    <PointsPath isClosed="true" id="3:12307">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.070999" x="-4.9999999e-05" y="-55.66795" id="3:12308"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.77375" y="-18.07155" id="3:12309"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.77375" y="18.07155" id="3:12310"/>
+                        <CubicDetachedVertex inDistance="23.070999" outRotation="3.1415927" outDistance="23.070999" x="-4.9999999e-05" y="55.66795" id="3:12311"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.77375" y="18.07155" id="3:12312"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.77375" y="-18.07155" id="3:12313"/>
+                    </PointsPath>
+                    <PointsPath isClosed="true" id="3:12314">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="22.3463" outDistance="22.3463" x="-4.9999999e-05" y="-53.873249" id="3:12315"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.1117" x="40.461552" y="-17.45785" id="3:12316"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.1117" x="40.461552" y="15.87455" id="3:12317"/>
+                        <CubicDetachedVertex inDistance="22.3463" outRotation="3.1415927" outDistance="22.3463" x="-4.9999999e-05" y="52.289951" id="3:12318"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.1117" x="-40.461651" y="15.87455" id="3:12319"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.1117" x="-40.461651" y="-17.45785" id="3:12320"/>
+                    </PointsPath>
+                    <Fill fillRule="evenOdd" id="3:12352">
+                        <LinearGradient startX="-41.773766" startY="-55.667969" endX="-41.773766" endY="55.66795" id="3:12321">
+                            <GradientStop colorValue="FFEBE6E0" position="0.00069999998" id="3:12322"/>
+                            <GradientStop colorValue="FFECE7E1" position="0.80070001" id="3:12323"/>
+                            <GradientStop colorValue="FFEFE9E3" position="0.95490003" id="3:12324"/>
+                            <GradientStop colorValue="FFF8F4F0" position="0.97710001" id="3:12325"/>
+                            <GradientStop colorValue="FFE2DBD5" position="0.9874" id="3:12326"/>
+                            <GradientStop colorValue="FFCDC4BA" position="0.99940002" id="3:12327"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+                <Shape name="Кольцо" id="3:12328">
+                    <PointsPath isClosed="true" id="3:12329">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="23.070999" outDistance="23.070999" x="-4.9999999e-05" y="-55.66795" id="3:12330"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="20.763901" x="41.77375" y="-18.07155" id="3:12331"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="20.763901" x="41.77375" y="18.07155" id="3:12332"/>
+                        <CubicDetachedVertex inDistance="23.070999" outRotation="3.1415927" outDistance="23.070999" x="-4.9999999e-05" y="55.66795" id="3:12333"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="20.763901" x="-41.77375" y="18.07155" id="3:12334"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="20.763901" x="-41.77375" y="-18.07155" id="3:12335"/>
+                    </PointsPath>
+                    <PointsPath isClosed="true" id="3:12336">
+                        <CubicDetachedVertex inRotation="3.1415927" inDistance="19.037901" outDistance="19.0378" x="4.9999999e-05" y="-46.816551" id="3:12337"/>
+                        <CubicDetachedVertex inRotation="-1.5707964" inDistance="17.134001" x="34.47105" y="-15.79265" id="3:12338"/>
+                        <CubicDetachedVertex outRotation="1.5707964" outDistance="17.134001" x="34.47105" y="12.58635" id="3:12339"/>
+                        <CubicDetachedVertex inDistance="19.0378" outRotation="3.1415927" outDistance="19.037901" x="4.9999999e-05" y="43.610249" id="3:12340"/>
+                        <CubicDetachedVertex inRotation="1.5707964" inDistance="17.134001" x="-34.47105" y="12.58635" id="3:12341"/>
+                        <CubicDetachedVertex outRotation="-1.5707964" outDistance="17.134001" x="-34.47105" y="-15.79265" id="3:12342"/>
+                    </PointsPath>
+                    <Fill fillRule="evenOdd" id="3:12353">
+                        <LinearGradient startX="-41.773766" startY="-55.667969" endX="-41.773766" endY="55.66795" id="3:12343">
+                            <GradientStop colorValue="FFE6E1DB" position="0.00069999998" id="3:12344"/>
+                            <GradientStop colorValue="FFEEEAE6" position="0.2868" id="3:12345"/>
+                            <GradientStop colorValue="FFF1EEE9" position="0.62940001" id="3:12346"/>
+                            <GradientStop colorValue="FFF4F1EB" position="0.99940002" id="3:12347"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+            </Node>
+        </Node>
+        <Fill fillRule="clockwise" id="1:3">
+            <SolidColor colorValue="00000000" id="1:4"/>
+        </Fill>
+        <LayoutComponentStyle id="1:5"/>
+        <ScriptedDrawable scriptAssetId="2:11970" x="27.884001" y="33.174999" name="PlaneGlass" id="4:12517">
+            <ScriptInputNumber propertyValue="1" name="speed" id="4:12518"/>
+        </ScriptedDrawable>
+        <Shape x="62.926899" y="81.103447" name="Тень рамы" id="3:12506">
+            <PointsPath isClosed="true" id="3:12507">
+                <CubicMirroredVertex distance="27.236" y="-67.30555" id="3:12508"/>
+                <CubicDetachedVertex inRotation="-1.5707964" inDistance="24.5124" x="49.315102" y="-22.921949" id="3:12509"/>
+                <StraightVertex x="49.315102" y="22.921949" id="3:12510"/>
+                <CubicMirroredVertex rotation="3.1415927" distance="27.236" y="67.30555" id="3:12511"/>
+                <CubicDetachedVertex inRotation="1.5707964" inDistance="24.5124" x="-49.315102" y="22.921949" id="3:12512"/>
+                <StraightVertex x="-49.315102" y="-22.921949" id="3:12513"/>
+            </PointsPath>
+            <Fill fillRule="clockwise" id="3:12514">
+                <SolidColor colorValue="6B4D3D38" id="3:12515"/>
+                <Feather strength="4.96" offsetY="0.76300001" id="3:12516"/>
+            </Fill>
+        </Shape>
+        <LinearAnimation duration="72" name="Intro" id="6:12519">
+            <KeyedObject objectId="3:12234" id="6:12520">
+                <KeyedProperty property="y" id="6:12521">
+                    <KeyFrameDouble value="46.710068" interpolationType="linear" id="6:12522"/>
+                    <KeyFrameDouble value="46.710068" interpolationType="cubic" frame="18" id="6:12523">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12524"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-49.118332" interpolationType="linear" frame="72" id="6:12525"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="3:12224" id="6:12526">
+                <KeyedProperty property="y" id="6:12527">
+                    <KeyFrameDouble value="50.975067" interpolationType="linear" id="6:12528"/>
+                    <KeyFrameDouble value="50.975067" interpolationType="cubic" frame="18" id="6:12529">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12530"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-44.853333" interpolationType="linear" frame="72" id="6:12531"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="3:12211" id="6:12532">
+                <KeyedProperty property="y" id="6:12533">
+                    <KeyFrameDouble value="48.345066" interpolationType="linear" id="6:12534"/>
+                    <KeyFrameDouble value="48.345066" interpolationType="cubic" frame="18" id="6:12535">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12536"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-47.483334" interpolationType="linear" frame="72" id="6:12537"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="3:12206" id="6:12538">
+                <KeyedProperty property="y" id="6:12539">
+                    <KeyFrameDouble value="48.811733" interpolationType="linear" id="6:12540"/>
+                    <KeyFrameDouble value="48.811733" interpolationType="cubic" frame="18" id="6:12541">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12542"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-47.016666" interpolationType="linear" frame="72" id="6:12543"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="3:12201" id="6:12544">
+                <KeyedProperty property="y" id="6:12545">
+                    <KeyFrameDouble value="51.525066" interpolationType="linear" id="6:12546"/>
+                    <KeyFrameDouble value="51.525066" interpolationType="cubic" frame="18" id="6:12547">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12548"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-44.303333" interpolationType="linear" frame="72" id="6:12549"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="3:12243" id="6:12550">
+                <KeyedProperty property="y" id="6:12551">
+                    <KeyFrameDouble value="95.8284" interpolationType="linear" id="6:12552"/>
+                    <KeyFrameDouble value="95.8284" interpolationType="cubic" frame="18" id="6:12553">
+                        <CubicEaseInterpolator x1="0.64999998" x2="0.34999999" id="6:12554"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble interpolationType="linear" frame="72" id="6:12555"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <StateMachine name="Plane window" id="1:7">
+            <StateMachineLayer name="Полёт" id="1:8">
+                <AnyState x="400" id="1:9"/>
+                <ExitState x="480" id="1:10"/>
+                <EntryState id="1:11">
+                    <StateTransition stateToId="1:12" id="1:13"/>
+                </EntryState>
+                <AnimationState animationId="1:6" x="160" id="1:12"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Шторка" id="6:12556">
+                <AnyState x="400" id="6:12557"/>
+                <ExitState x="480" id="6:12558"/>
+                <EntryState id="6:12559">
+                    <StateTransition stateToId="6:12560" id="6:12561"/>
+                </EntryState>
+                <AnimationState animationId="6:12519" x="160" stateName="Intro" id="6:12560"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="loop" name="Flight" id="1:6"/>
+    </Artboard>
+    <ImageAsset file="wing.png" height="399" width="280" assetId="7268600" includeInExport="true" name="wing" id="1:20"/>
+    <SVGAsset file="frame.svg" height="145" width="109" assetId="7268596" name="frame" id="1:16"/>
+    <SVGAsset file="shade.svg" height="112" width="84" assetId="7268597" name="shade" id="1:17"/>
+    <SVGAsset file="glass-mask.svg" height="92" width="70" assetId="7268598" name="glass-mask" id="1:18"/>
+    <SVGAsset file="rim.svg" height="112" width="84" assetId="7268599" name="rim" id="1:19"/>
+    <ScriptAsset file="PlaneGlass.luau" codeFileId="2:23" name="PlaneGlass" id="2:11970"/>
+    <ViewModel defaultInstanceId="1:15" name="ViewModel1" id="1:14">
+        <ViewModelInstance exports="true" id="1:15"/>
+    </ViewModel>
+</Rive>
