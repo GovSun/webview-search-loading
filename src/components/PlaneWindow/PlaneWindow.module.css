@@ -60,9 +60,11 @@
  * exported as a 4× image of that window's opening (1123 × 1597), saved as WebP and turned from
  * lavender to the DS greys (scripts/gray-wing.py). The opening covers the glass by width and is
  * centred vertically: 70.086 × 99.873 at top −4.066.
- * In flight it slowly rides up and down, 3.5 s each way: the whole wing moves 1.6 units either
- * side, and a turn about its root (off the glass on the right) lets the tip go a little further,
- * like a wing flexing. Constant motion, so ease-in-out both ways.
+ * In flight it rides up and down, 2 s each way: the whole wing moves 1.6 units either side, and a
+ * turn about its root (off the glass on the right) lets the tip go a little further, like a wing
+ * flexing. A flexing wing is a spring, so each stroke follows a sine (easeInOutSine): it slows into
+ * every turn and picks up out of it like a pendulum, instead of lingering at the ends and rushing
+ * the middle as a steeper ease-in-out does.
  */
 .wing {
   position: absolute;
@@ -72,7 +74,7 @@
   height: calc(99.873 * var(--u));
   max-width: none;
   transform-origin: 105% 70%;
-  animation: wing-ride 3.5s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+  animation: wing-ride 2s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
 }
 
 @keyframes wing-ride {
